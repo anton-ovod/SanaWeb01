@@ -86,8 +86,11 @@
 
 </form>
 
-
-  
+<script>
+    document.getElementById('rating').addEventListener('input', function () {
+      document.querySelector('output[for="rating"]').textContent = this.value;
+    });
+  </script>
 
 </body>
 </html>
