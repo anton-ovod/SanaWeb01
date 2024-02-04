@@ -1,0 +1,99 @@
+<!DOCTYPE html>
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>First Form</title>
+</head>
+
+<body>
+    <form>
+        <table cellspacing="5">
+            <tr>
+                <td>
+                    <label for="login">Логін:</label>
+                </td>
+                <td>
+                    <input type="text" id="login" name="login">
+                </td>
+            </tr>
+
+            <tr>
+                <td>
+                    <label for="password">Пароль:</label>
+                </td>
+                <td>
+                    <input type="password" id="password" name="password">
+                </td>
+                
+            </tr>
+
+            <tr>
+                <td>
+                    <label for="confirm-password">Повторіть пароль: </label>
+                </td>
+                <td>
+                    <input type="password" id="confirm-password" name="confirm-password">
+                </td>
+                
+            </tr>
+
+            <tr>
+                <td>
+                    <label for="gender">Стать:</label>                
+                </td>
+                <td>
+                    <input type="radio" name="gender" value="чоловік" id="male">
+                    <label for="male">чоловік</label>   
+
+                    <input type="radio" name="gender" value="жінка" id="female">
+                    <label for="female">жінка</label>             
+                </td>
+                
+            </tr>
+
+            <tr>
+                <td>
+                    <label for="city">Вкажіть місто:</label>              
+                </td>
+                <td>
+                    <select id="city" name="city" multiple size="4">
+                        <option value="zhytomyr" selected>Житомир</option>
+                        <option value="kyiv">Київ</option>
+                        <option value="lviv">Львів</option>
+                      </select>               
+                </td>
+                
+            </tr>
+
+            <tr>
+                <td>
+                    <label for="interests">Інтереси:</label>             
+                </td>
+                <td>
+                    <input type="checkbox" id="football" name="interests" value="футбол">
+                    <label for="football">футбол</label>
+        
+                    <input type="checkbox" id="chess" name="interests" value="шахи">
+                    <label for="chess">шахи</label>
+        
+                    <input type="checkbox" id="drawing" name="interests" value="малювання">
+                    <label for="drawing">малювання</label>
+        
+                    <input type="checkbox" id="music" name="interests" value="музика">
+                    <label for="music">музика</label>          
+                </td>
+                
+            </tr>
+
+            <tr>
+                <td></td>
+                <td>        
+                    <input type="reset" value="Очистити">
+                    <input type="submit" value="Відправити">
+                </td>
+            </tr>
+        </table>
+      </form>
+    
+</body>
+</html>
