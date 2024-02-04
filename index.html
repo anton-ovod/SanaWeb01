@@ -44,6 +44,36 @@
 
   </fieldset>
 
+  <fieldset>
+    <legend>Ваші вподобання</legend>
+
+    <label for="food">Улюблена їжа:</label>
+    <select id="food" name="food">
+      <optgroup label="Основні страви">
+        <option value="pizza">Піца</option>
+        <option value="burger">Бургер</option>
+      </optgroup>
+      <optgroup label="Десерти">
+        <option value="icecream">Морозиво</option>
+        <option value="cake">Торт</option>
+      </optgroup>
+    </select>
+
+    <label for="comments">Коментарі:</label>
+    <textarea id="comments" name="comments" spellcheck="false" placeholder="Ваші коментарі"></textarea>
+
+    <label for="preferences">Інші вподобання:</label>
+    <input type="text" id="preferences" name="preferences" list="preferences-list" placeholder="Виберіть або введіть свої вподобання">
+    
+    <datalist id="preferences-list">
+      <option value="Вегетаріанська їжа">
+      <option value="Морепродукти">
+      <option value="Стейк">
+      <option value="Італійська кухня">
+    </datalist>
+
+  </fieldset>
+
   </form>
 
 </body>
