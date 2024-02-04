@@ -1,0 +1,50 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Анкета відвідувача ресторану</title>
+  <link rel="stylesheet" href="style.css">
+</head>
+<body>
+
+<form action="#" method="post">
+
+  <fieldset>
+    <legend>Основна інформація</legend>
+
+    <label for="name">Ім'я:</label>
+    <input type="text" id="name" name="name" required placeholder="Ваше ім'я">
+
+    <label for="email">Email:</label>
+    <input type="email" id="email" name="email" required autocomplete="off" placeholder="example@example.com">
+
+    <label for="phone">Номер телефону:</label>
+    <input type="tel" id="phone" name="phone" required pattern="[0-9]{10}" placeholder="Наприклад, 1234567890">
+
+    <label for="dob">Дата народження:</label>
+    <input type="date" id="dob" name="dob" required>
+
+    <label for="color">Оберіть улюблений колір:</label>
+    <input type="color" id="color" name="color" required>
+
+    <label for="progress">Прогрес:</label>
+    <progress id="progress" value="50" max="100"></progress>
+
+    <label for="meter">Метр:</label>
+    <meter id="meter" value="30" min="0" max="100">30%</meter>
+
+    <label for="rating">Оцінка (від 1 до 10):</label>
+    <input type="range" id="rating" name="rating" min="1" max="10" step="1" value="5">
+    <output for="rating">5</output>
+
+    <label for="quantity">Кількість осіб:</label>
+    <input type="number" id="quantity" name="quantity" min="1" max="10" value="1">
+
+
+  </fieldset>
+
+  </form>
+
+</body>
+</html>
